@@ -1,0 +1,9 @@
+\*_/_.js
+
+# don't lint built files
+
+dist
+
+# ignore node_modules
+
+node_modules
