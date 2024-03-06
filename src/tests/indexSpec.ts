@@ -11,7 +11,7 @@ describe('Test endpoint responses', (): void => {
   });
   describe('endpoint api/images', (): void => {
     it('GET api/images with invalid filename', async () => {
-      const response = await request.get('/api/images?filename=palmtunnel1');
+      const response = await request.get('/api/images?filename=palmtunnel1&width=200&height=200');
       expect(response.status).toBe(404);
     });
     it('GET api/images with invalid image dimensions', async () => {
